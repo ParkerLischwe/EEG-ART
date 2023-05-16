@@ -1,0 +1,8 @@
+# EEG-ART
+![Screen Shot 2023-04-27 at 1 23 26 PM](https://github.com/ParkerLischwe/EEG-ART/assets/63138339/789837cf-0807-4d43-b398-705be6d838f5) 
+
+With the arrival of generative art models like DALLE-2 and MidJourney, unique high resolution images can be created with just a few words. This has created a disconnect between the art and artist. The EEG-Art project attempts to connect the artist to their art through the use of brain signals to affect the parameters of a visual space in real time. While listening to music, the artist's brain signals are processed in real time and used to represent a visual space - effectively mapping the sound representation into a visual space through the medium of brain signals. The first solution utilizes Petal Metrics, the osc python library, and MaxMSP to create an interactive art installation. Petal Metrics is a free application used to stream EEG signals from the 4 channels of the muse headset to a specified UDP port on any machine. To process the signals from the headset, we use the python-osc library to create an "OSC Server". This server is listening in on the same UDP port that Petal Metrics is streaming OSC messages to. These messages (aka raw brain signals) are then parsed, processed, and sent to an "OSC client" - which is another specified port where the final signal values are sent to. The specified port of the OSC client is the same port that Max is recieving the final signal values on, using the UDP Recieve object.
+
+
+
+![EEG Art Software Project](https://github.com/ParkerLischwe/EEG-ART/assets/63138339/511cfedd-ab9c-4409-8cdd-724730c81873)
