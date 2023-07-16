@@ -13,3 +13,5 @@ The processing of the eeg signals happens within the osc.py script.
 The poster presented at the 2023 California Neurotechnology Conference, hosted by UCLA, is shown below.
 
 ![EEG Art Software Project](https://github.com/ParkerLischwe/EEG-ART/assets/63138339/511cfedd-ab9c-4409-8cdd-724730c81873)
+
+Our final Max Patch is a redesign of [@AmazingMaxStuff's](https://www.youtube.com/channel/UCvDUaH2fbXP_Yc5Lc9UXfqA) tutorial on his youtube page.
